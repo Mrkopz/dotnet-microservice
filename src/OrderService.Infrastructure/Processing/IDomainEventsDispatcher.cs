@@ -1,4 +1,9 @@
-$HEADER$namespace $NAMESPACE$
+using System.Threading.Tasks;
+
+namespace OrderService.Infrastructure.Processing
 {
-  public class $CLASS$ {$END$}
+    public interface IDomainEventsDispatcher
+    {
+        Task DispatchEventsAsync();
+    }
 }

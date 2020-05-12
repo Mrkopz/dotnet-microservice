@@ -1,6 +1,6 @@
 using OrderService.Domain.Products;
 
-namespace OrderService.Domain.Orders
+namespace OrderService.Domain.Customers.Orders
 {
     public class OrderProductData
     {

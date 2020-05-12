@@ -1,4 +1,7 @@
-$HEADER$namespace $NAMESPACE$
+namespace OrderService.Domain.SeedWork
 {
-  public class $CLASS$ {$END$}
+    public interface IAggregateRoot
+    {
+        
+    }
 }

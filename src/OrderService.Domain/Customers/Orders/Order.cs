@@ -6,7 +6,7 @@ using OrderService.Domain.Products;
 using OrderService.Domain.SeedWork;
 using OrderService.Domain.SharedKernel;
 
-namespace OrderService.Domain.Orders
+namespace OrderService.Domain.Customers.Orders
 {
     public class Order : Entity
     {

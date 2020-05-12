@@ -1,4 +1,10 @@
-$HEADER$namespace $NAMESPACE$
+using System;
+using MediatR;
+
+namespace OrderService.Domain.SeedWork
 {
-  public class $CLASS$ {$END$}
+    public interface IDomainEvent : INotification
+    {
+        DateTimeOffset OccurredOn { get; }
+    }
 }

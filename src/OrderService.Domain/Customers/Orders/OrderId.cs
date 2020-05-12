@@ -1,7 +1,7 @@
 using System;
 using OrderService.Domain.SeedWork;
 
-namespace OrderService.Domain.Orders
+namespace OrderService.Domain.Customers.Orders
 {
     public class OrderId : TypedIdValueBase
     {

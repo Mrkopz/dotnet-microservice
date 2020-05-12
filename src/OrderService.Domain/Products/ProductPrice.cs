@@ -1,4 +1,14 @@
-$HEADER$namespace $NAMESPACE$
+using OrderService.Domain.SharedKernel;
+
+namespace OrderService.Domain.Products
 {
-  public class $CLASS$ {$END$}
+    public class ProductPrice
+    {
+        public MoneyValue Value { get; private set; }
+
+        private ProductPrice()
+        {
+            
+        }
+    }
 }

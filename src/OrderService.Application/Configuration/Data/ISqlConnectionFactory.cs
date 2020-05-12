@@ -1,4 +1,9 @@
-$HEADER$namespace $NAMESPACE$
+using System.Data;
+
+namespace OrderService.Application.Configuration.Data
 {
-  public interface $INTERFACE$ {$END$}
+    public interface ISqlConnectionFactory
+    {
+        IDbConnection GetOpenConnection();
+    }
 }

@@ -1,4 +1,9 @@
-$HEADER$namespace $NAMESPACE$
+namespace OrderService.Domain.Payments
 {
-  public class $CLASS$ {$END$}
+    public enum PaymentStatus
+    {
+        ToPay = 0,
+        Payed = 1,
+        Overdue = 2
+    }
 }

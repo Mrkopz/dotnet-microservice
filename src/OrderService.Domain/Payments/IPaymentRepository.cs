@@ -1,4 +1,11 @@
-$HEADER$namespace $NAMESPACE$
+using System.Threading.Tasks;
+
+namespace OrderService.Domain.Payments
 {
-  public class $CLASS$ {$END$}
+    public interface IPaymentRepository
+    {
+        Task<Payment> GetByIdAsync(PaymentId id);
+
+        Task AddAsync(Payment payment);
+    }
 }

@@ -1,4 +1,9 @@
-$HEADER$namespace $NAMESPACE$
+namespace OrderService.Infrastructure.Database
 {
-  public class $CLASS$ {$END$}
+    internal class SchemaNames
+    {
+        internal const string Orders = "orders";
+        internal const string Application = "app";
+        internal const string Payments = "payments";
+    }
 }

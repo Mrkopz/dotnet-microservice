@@ -1,4 +1,12 @@
-$HEADER$namespace $NAMESPACE$
+using System;
+using OrderService.Domain.SeedWork;
+
+namespace OrderService.Domain.Customers
 {
-  public class $CLASS$ {$END$}
+    public class CustomerId : TypedIdValueBase
+    {
+        public CustomerId(Guid value) : base(value)
+        {
+        }
+    }
 }

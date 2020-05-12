@@ -1,4 +1,12 @@
-$HEADER$namespace $NAMESPACE$
+using System.Threading.Tasks;
+
+namespace OrderService.Infrastructure.Processing
 {
-  public class $CLASS$ {$END$}
+    public class DomainEventsDispatcher : IDomainEventsDispatcher
+    {
+        public Task DispatchEventsAsync()
+        {
+            throw new System.NotImplementedException();
+        }
+    }
 }

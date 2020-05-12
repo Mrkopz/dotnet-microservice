@@ -1,4 +1,12 @@
-$HEADER$namespace $NAMESPACE$
+using Microsoft.EntityFrameworkCore;
+
+namespace OrderService.Infrastructure.Database
 {
-  public class $CLASS$ {$END$}
+    public class AppDbContextFactory : DesignTimeDbContextFactoryBase<AppDbContext>
+    {
+        protected override AppDbContext CreateNewInstance(DbContextOptions<AppDbContext> options)
+        {
+            return new AppDbContext(options);
+        }
+    }
 }

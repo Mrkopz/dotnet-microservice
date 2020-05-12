@@ -1,4 +1,10 @@
-$HEADER$namespace $NAMESPACE$
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace OrderService.Infrastructure.SeedWork
 {
-  public class $CLASS$ {$END$}
+    public interface IUnitOfWork
+    {
+        Task<int> CommitAsync(CancellationToken cancellationToken = default(CancellationToken));
+    }
 }

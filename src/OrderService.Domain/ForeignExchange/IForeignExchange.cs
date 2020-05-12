@@ -1,4 +1,9 @@
-$HEADER$namespace $NAMESPACE$
+using System.Collections.Generic;
+
+namespace OrderService.Domain.ForeignExchange
 {
-  public interface $INTERFACE$ {$END$}
+    public interface IForeignExchange
+    {
+        List<ConversionRate> GetConversionRates();
+    }
 }

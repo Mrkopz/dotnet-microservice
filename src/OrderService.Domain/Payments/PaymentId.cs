@@ -1,4 +1,12 @@
-$HEADER$namespace $NAMESPACE$
+using System;
+using OrderService.Domain.SeedWork;
+
+namespace OrderService.Domain.Payments
 {
-  public class $CLASS$ {$END$}
+    public class PaymentId : TypedIdValueBase
+    {
+        public PaymentId(Guid value) : base(value)
+        {
+        }
+    }
 }
